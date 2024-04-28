@@ -9,7 +9,7 @@ finish() {
 }
 trap finish EXIT
 
-crontab -l > $tmpfile
+crontab -l > $tmpfile || true
 
 if grep -q $cronscript $tmpfile; then
 	echo "Cronjob is already installed"
