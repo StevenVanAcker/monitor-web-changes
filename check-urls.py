@@ -96,7 +96,7 @@ class URLChecker():
         if changed:
             print("The following URLs have changed:")
             for url in changed:
-                print(f"  {url}")
+                print(f"  - {url}")
 
 
 if __name__ == "__main__":
