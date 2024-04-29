@@ -16,7 +16,7 @@ if grep -q $cronscript $tmpfile; then
 	exit 0
 fi
 
-echo "@daily $cronscript" >> $tmpfile
+echo "@hourly $cronscript" >> $tmpfile
 
 echo "Installing cronjob"
 crontab $tmpfile
