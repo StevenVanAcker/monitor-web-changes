@@ -1,2 +1,5 @@
 # Check whether hashicorp supports Ubuntu 24.04 Noble Numbat
 https://apt.releases.hashicorp.com/dists/noble/Release
+
+# Hashicorp Offidial Packaging Guide
+https://www.hashicorp.com/official-packaging-guide
