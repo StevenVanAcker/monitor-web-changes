@@ -19,7 +19,8 @@ class URLChecker():
         """
         Read the URLs from self.urlfile.
         The config file is a text file with one URL per line.
-        Comments are allowed and start with a # as the first character on the line.
+        Comments are allowed and start with a # as the first
+        character on the line.
         Empty lines and comment lines are ignored.
         """
 
@@ -32,7 +33,8 @@ class URLChecker():
 
     def contentHasChanged(self, url: str, content: bytes):
         """
-        Verify whether the content of the URL has changed with regard to the cached content.
+        Verify whether the content of the URL has changed with
+        regard to the cached content.
         Return True if the content has changed, False otherwise.
         If the URL is not cached, return True.
         The cache is updated with the new content if it has changed.
@@ -84,7 +86,8 @@ class URLChecker():
     def run(self):
         """
         Check the status of every URL in the URL list.
-        If any URL has changed, print an informative summary message to the console.
+        If any URL has changed, print an informative
+        summary message to the console.
         Otherwise, output nothing.
         """
 
