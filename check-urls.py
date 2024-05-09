@@ -100,4 +100,7 @@ class URLChecker():
 
 
 if __name__ == "__main__":
-    URLChecker("urls.txt", "cache").run()
+    thisdirectory = os.path.dirname(__file__)
+    urlsfile = os.path.join(thisdirectory, "urls.txt")
+    cachedir = os.path.join(thisdirectory, "cache")
+    URLChecker(urlsfile, cachedir).run()
